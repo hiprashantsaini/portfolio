@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/c01adc6b28.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Screenshot 2024-08-10 190105.png" class="logo"/>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>MERN stack developer</p>
+                <h1>Hi, I am <span>Prashant</span> From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------About-------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Prashant (1).jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hello! I'm Prashant, currently pursuing a B.Tech in Computer Science and Engineering, expected to graduate in 2025. As a passionate developer, I specialize in both frontend and backend development, with a strong foundation in technologies like JavaScript, HTML, CSS, React, MongoDB, Express, and Node.js.</p>
+                    <br>
+                    <p>Throughout my studies, I've honed my skills by working on various projects that blend creativity with technical expertise. I'm driven by the challenge of building efficient, user-friendly applications that solve real-world problems.</p>
+                    <br>
+                    <p>As I continue to grow in my field, I'm eager to take on new opportunities that allow me to further develop my skills and contribute to innovative projects.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>JavaScript,Pyhton,Java</li>
+                            <li><span>Frontend Development</span><br>HTML,CSS,JS,React,Redux,tailwind</li>
+                            <li><span>Backend Development</span><br>Node js,Express js,Mongodb, Mysql</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Learning</span><br>I have been learning web development since 2022.</li>
+                            <li><span>Internship</span><br>Completed a 3-month internship at NullClass.com.</li>
+                        </ul>
+                    </div>
+                    
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B-tech(2021-2025)</span><br>Rajkiya Engineering college kannauj,AKTU university(U.P.)</li>
+                            <li><span>Intermediate (12th)</span><br>In 2020 from U.P. Board</li>
+                            <li><span>High school (10th)</span><br>In 2018 from U.P. Board</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I specialize in building responsive and user-friendly websites using modern technologies like HTML, CSS, JavaScript, and React. Whether you need a personal portfolio, a business website, or an interactive web application, I deliver high-quality solutions tailored to your needs.</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Backend Development</h2>
+                    <p>I provide robust backend development services using Node.js, Express.js, and MongoDB. From creating RESTful APIs to managing databases, I ensure that your web applications are secure, scalable, and efficient.</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2> Full-Stack Development</h2>
+                    <p>Combining my expertise in both frontend and backend technologies, I offer full-stack development services that cover the entire spectrum of web development. I can build complete web applications from scratch, ensuring seamless integration between the frontend and backend.</p>
+                    <!-- <a href="#">learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------- Portfolio --------  -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/SocialMedia.png" />
+                    <div class="layer">
+                        <h3>Social Media Website</h3>
+                        <p>Developed a full-featured social media platform that allows users to create accounts, post content, like, comment, and share posts. The platform includes real-time updates and a responsive design to ensure a seamless user experience across all devices.</p>
+                        <a href="https://66a3facb9788dc4709196332--neon-strudel-8c317d.netlify.app/login"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Twitter-clone.png" />
+                    <div class="layer">
+                        <h3>Twitter Clone</h3>
+                        <p>Built a Twitter-like platform that mimics the core functionalities of Twitter, including tweeting, liking, and following users. Integrated Google Firebase for real-time database management and user authentication, providing a robust and scalable backend.</p>
+                        <a href="https://twitter-cloneweb.netlify.app/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/user-manage.png" />
+                    <div class="layer">
+                        <h3>User Management System</h3>
+                        <p>Developed a comprehensive user management backend that facilitates admin login and full CRUD (Create, Read, Update, Delete) operations. The system allows administrators to manage users effectively, while also supporting user registration, login, and authentication processes.</p>
+                        <a href="https://github.com/hiprashantsaini/User-Management/tree/main/User%20Management%20System%20Project"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- --------- Contact --------------  -->
+     <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> prashantsaini4449@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 7895669626</p>
+                <div class="social-icons">
+                    <a href="https://twitter.com/prashan789566"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/prashant-saini-a60579241/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/hiprashantsaini"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <!-- Downloadable file  -->
+                 <a href="images/Prashant Resume-2.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy;. Made with <i class="fa-solid fa-heart"></i> By learn tech</p>
+        </div>        
+
+     </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById('sidemenu');
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+
+</html>
